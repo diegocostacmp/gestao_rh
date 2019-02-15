@@ -1,24 +1,23 @@
 
 <h1 align="center">
-  <br>
-  <a href="/static/img/rh.jpg" alt="Markdownify" width="200"></a>
-  <br>
-  Gestao RH
+	
+ ![Gestao RH Logo](/static/img/rh.jpg)
   <br>
 </h1>
 
-<h4 align="center">Uma plataforma para gerenciar cadastro de funcionarios. <a href="https://www.djangoproject.com/" target="_blank">Electron</a>.</h4>
+
+
+
+<h4 align="center">Uma plataforma para gerenciar cadastro de funcionarios. <a href="https://www.djangoproject.com/" target="_blank">Django</a>.</h4>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
+  <a href="#key-features">Features</a> •
+  <a href="#how-to-use">Como Usar</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
 ## Key Features
 

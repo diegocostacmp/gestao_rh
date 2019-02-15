@@ -16,7 +16,7 @@
   <a href="#how-to-use">Como Usar</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
+  <a href="#contrib">Contribuir</a> •
   <a href="#license">License</a>
 </p>
 
@@ -81,9 +81,9 @@ This software uses the following open source packages:
 - Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
 - [highlight.js](https://highlightjs.org/)
 
-## Related
+## Contribuir
 
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+Você pode contribuir de várias maneiras, como criar novos recursos, corrigir erros, melhorar a documentação e exemplos ou traduzir qualquer documento aqui para o seu idioma.
 
 ## Support
 

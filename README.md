@@ -16,7 +16,7 @@
   <a href="#how-to-use">Como Usar</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
-  <a href="#contrib">Contribuir</a> •
+  <a href="#contribuir">Contribuir</a> •
   <a href="#license">License</a>
 </p>
 

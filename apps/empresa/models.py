@@ -1,4 +1,5 @@
 from django.db import models
+from django.shortcuts import redirect, reverse
 
 
 class Empresa(models.Model):
@@ -8,4 +9,6 @@ class Empresa(models.Model):
         return self.nome
 
     
+    def get_absolute_url(self):
+        return reverse('/')
     

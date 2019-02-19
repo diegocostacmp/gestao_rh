@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 from .models import  Empresa
 from django.http import HttpResponse
 
@@ -15,3 +15,6 @@ class EmpresaCreate(CreateView):
 
         return HttpResponse('ok')
 
+class EmpresaEdit(UpdateView):
+    model = Empresa
+    fields = ['nome']

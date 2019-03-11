@@ -1,5 +1,6 @@
 from django.db import models
 from apps.empresa.models import Empresa
+from django.urls import reverse
 
 
 
@@ -8,4 +9,8 @@ class Departamento(models.Model):
     empresa = models.ForeignKey(Empresa, on_delete=models.PROTECT)
 
     def __str__(self):
+        return reverse('list_departamento')
+
+    def get_absolute_url(self):
         return self.nome
+    

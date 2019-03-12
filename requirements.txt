@@ -1,0 +1,7 @@
+autopep8==1.4.3
+Django==2.1.5
+django-bootstrap-form==3.4
+freeze==1.0.10
+pycodestyle==2.5.0
+pytz==2018.9
+six==1.12.0

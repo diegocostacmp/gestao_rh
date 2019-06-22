@@ -7,6 +7,7 @@ from django.views.generic import (
     CreateView
     )
 from .models import HoraExtra    
+from .forms import HoraExtraForm
 
 class HoraExtraList(ListView):
     model = HoraExtra
@@ -18,7 +19,14 @@ class HoraExtraList(ListView):
 
 class HoraExtraEdit(UpdateView):
     model = HoraExtra
-    fields = ['motivo', 'funcionario', 'horas']   
+    form_class = HoraExtraForm
+    
+    # Injeta os args necessarios para filtrar a listagem de
+    #  usuarios por empresa no edit
+    def get_form_kwargs(self):
+        kwargs = super(HoraExtraEdit, self).get_form_kwargs()
+        kwargs.update({'user': self.request.user})
+        return kwargs
 
 class HoraExtraDelete(DeleteView):
     model = HoraExtra
@@ -26,4 +34,11 @@ class HoraExtraDelete(DeleteView):
 
 class HoraExtraCreate(CreateView):
     model = HoraExtra
-    fields = ['motivo', 'funcionario', 'horas']
+    form_class = HoraExtraForm
+    
+    # Injeta os args necessarios para filtrar a listagem de
+    #  usuarios por empresa no create
+    def get_form_kwargs(self):
+        kwargs = super(HoraExtraCreate, self).get_form_kwargs()
+        kwargs.update({'user': self.request.user})
+        return kwargs

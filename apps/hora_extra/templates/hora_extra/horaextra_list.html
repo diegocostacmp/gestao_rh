@@ -13,4 +13,7 @@ Banco de horas
     {% empty %}
         Nao existe registro de hora extra
     {% endfor %} 
+    <a href="{% url 'create_hora_extra' %}" class="btn btn-info">
+        Novo
+    </a>
 {% endblock %}

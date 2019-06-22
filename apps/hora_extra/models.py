@@ -3,9 +3,9 @@ from apps.funcionario.models import Funcionario
 
 
 class HoraExtra(models.Model):
-    motivo = models.CharField(max_length=100)
-    funcionario = models.ForeignKey(
-        Funcionario, on_delete=models.PROTECT, default=None)
+    motivo          = models.CharField(max_length=100)
+    funcionario     = models.ForeignKey(Funcionario, on_delete=models.PROTECT, default=None)
+    horas           = models.DecimalField(max_digits=5, decimal_places=2)
 
     def __str__(self):
         return self.motivo

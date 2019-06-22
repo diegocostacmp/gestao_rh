@@ -7,5 +7,10 @@ Banco de horas
         <a href="{% url 'update_hora_extra' registro_re.id %}">
             {{registro_re}}
         </a>
+        <a href="{% url 'delete_hora_extra' registro_re.id %}" class="btn btn-danger">
+            Deletar
+        </a>
+    {% empty %}
+        Nao existe registro de hora extra
     {% endfor %} 
 {% endblock %}

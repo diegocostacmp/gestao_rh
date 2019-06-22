@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views.generic import (
     ListView,
     UpdateView,
@@ -18,3 +19,7 @@ class HoraExtraList(ListView):
 class HoraExtraEdit(UpdateView):
     model = HoraExtra
     fields = ['motivo', 'funcionario', 'horas']   
+
+class HoraExtraDelete(DeleteView):
+    model = HoraExtra
+    success_url =  reverse_lazy('list_hora_extra')

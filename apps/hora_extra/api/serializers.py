@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from apps.registro_hora_extra.models import RegistroHoraExtra
+from apps.hora_extra.models import HoraExtra
 
 
-class RegistroHoraExtraSerializer(serializers.ModelSerializer):
+class HoraExtraSerializer(serializers.ModelSerializer):
     class Meta:
-        model = RegistroHoraExtra
-        fields = ('motivo', 'funcionario', 'horas', 'utilizada')
+        model = HoraExtra
+        fields = ('motivo', 'funcionario', 
+            'horas', 'utilizada')

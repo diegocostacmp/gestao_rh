@@ -22,16 +22,15 @@ class Funcionario(models.Model):
         on_delete=models.PROTECT, default=None, 
         null=True, blank=True)
 
-    def __str__(self):
-        return self.nome
-
     def get_absolute_url(self):
         return reverse('list_funcionario')
     
     @property
     def total_horas_extra(self):
-        total = self.registrohoraextra_set.filter(
+        total = self.horaextra_set.filter(
             utilizada=False).aggregate(
             Sum('horas'))['horas__sum']
         return total or 0
 
+    def __str__(self):
+        return self.nome

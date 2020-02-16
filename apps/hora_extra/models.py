@@ -8,9 +8,10 @@ class HoraExtra(models.Model):
         on_delete=models.PROTECT, default=None)
     horas = models.DecimalField(max_digits=5, 
         decimal_places=2)
+    utilizada = models.BooleanField(default=False)
 
     def get_absolute_url(self):
-        return reverse('update_hora_extra', args=[self.id])
+        return reverse('update_funcionario', args=[self.funcionario.id])
 
     def __str__(self):
         return self.motivo

@@ -1,12 +1,12 @@
 from rest_framework import viewsets
-from apps.registro_hora_extra.api.serializers import RegistroHoraExtraSerializer
-from apps.registro_hora_extra.models import RegistroHoraExtra
+from apps.hora_extra.api.serializers import HoraExtraSerializer
+from apps.hora_extra.models import HoraExtra
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authentication import TokenAuthentication
 
 
-class RegistroHoraExtraViewSet(viewsets.ModelViewSet):
-    queryset = RegistroHoraExtra.objects.all()
-    serializer_class = RegistroHoraExtraSerializer
+class HoraExtraViewSet(viewsets.ModelViewSet):
+    queryset = HoraExtra.objects.all()
+    serializer_class = HoraExtraSerializer
     authentication_classes = (TokenAuthentication,)
     permission_classes = (IsAuthenticated,)

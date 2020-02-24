@@ -5,8 +5,7 @@ function utilizouHoraExtra(id){
         type: 'POST',
         url: '/horas-extras/utilizou-hora-extra/' + id + '/',
         data: {
-            csrfmiddlewaretoken: token,
-            outro_param: 123
+            csrfmiddlewaretoken: token
         },
         success: function(result){
             $("#mensagem").text(result.mensagem);

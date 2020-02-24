@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView
-from .models import  Empresa
+from .models import Empresa
 from django.http import HttpResponse
+
 
 class EmpresaCreate(CreateView):
     model = Empresa
-    fields = ['nome']
+    fields = ["nome"]
 
     def form_valid(self, form):
         obj = form.save()
@@ -13,8 +14,9 @@ class EmpresaCreate(CreateView):
         funcionario.empresa = obj
         funcionario.save()
 
-        return HttpResponse('ok')
+        return HttpResponse("ok")
+
 
 class EmpresaEdit(UpdateView):
     model = Empresa
-    fields = ['nome']
+    fields = ["nome"]

@@ -6,14 +6,14 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('documento', '0004_auto_20190208_0032'),
+        ("documento", "0004_auto_20190208_0032"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='documento',
-            name='arquivo',
-            field=models.FileField(default='', upload_to='documentos'),
+            model_name="documento",
+            name="arquivo",
+            field=models.FileField(default="", upload_to="documentos"),
             preserve_default=False,
         ),
     ]

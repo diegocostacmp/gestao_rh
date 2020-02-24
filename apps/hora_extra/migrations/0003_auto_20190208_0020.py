@@ -7,13 +7,17 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hora_extra', '0002_horaextra_funcionario'),
+        ("hora_extra", "0002_horaextra_funcionario"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='horaextra',
-            name='funcionario',
-            field=models.ForeignKey(default=None, on_delete=django.db.models.deletion.PROTECT, to='funcionario.Funcionario'),
+            model_name="horaextra",
+            name="funcionario",
+            field=models.ForeignKey(
+                default=None,
+                on_delete=django.db.models.deletion.PROTECT,
+                to="funcionario.Funcionario",
+            ),
         ),
     ]

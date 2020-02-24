@@ -7,13 +7,19 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('documento', '0002_auto_20190208_0006'),
+        ("documento", "0002_auto_20190208_0006"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='documento',
-            name='pertence',
-            field=models.ForeignKey(blank=True, default=None, null=True, on_delete=django.db.models.deletion.SET_NULL, to='funcionario.Funcionario'),
+            model_name="documento",
+            name="pertence",
+            field=models.ForeignKey(
+                blank=True,
+                default=None,
+                null=True,
+                on_delete=django.db.models.deletion.SET_NULL,
+                to="funcionario.Funcionario",
+            ),
         ),
     ]

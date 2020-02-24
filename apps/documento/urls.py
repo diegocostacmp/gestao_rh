@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path, re_path
+
 from .views import DocumentCreate
 
 urlpatterns = [
-    path('novo/<int:funcionario_id>', DocumentCreate.as_view(), 
-        name='create_documento'),
+    path(
+        "novo/<int:funcionario_id>", DocumentCreate.as_view(), name="create_documento"
+    ),
     # path('editar/<int:pk>', EmpresaEdit.as_view(), name='edit_empresa'),
 ]

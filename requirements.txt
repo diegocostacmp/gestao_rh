@@ -35,7 +35,7 @@ pycparser==2.19
 pylint==2.4.4
 pylint-django==2.0.13
 pylint-plugin-utils==0.6
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 Pyphen==0.9.5
 python-crontab==2.3.5
 python-dateutil==2.7.5
